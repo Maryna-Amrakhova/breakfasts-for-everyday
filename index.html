@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Your breakfasts for every day</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Your AI breakfasts generator</h1>
+      </header>
+
+      <main>
+        <div class="form-container">
+          <form id="generator-form">
+            <input
+              type="text"
+              placeholder="Enter your favorite food for breakfast"
+              autofocus
+              required
+              autocomplete="off"
+              class="text-type"
+              id="user-context"
+            />
+            <input type="submit" class="submit-type" />
+          </form>
+          <small class="hint"> i.e: eggs, cheese, cabbage, tomato...</small>
+        </div>
+        <div class="breakfast hidden blink" id="breakfast"></div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/Maryna-Amrakhova" target="_blank"
+          >Maryna Amrakhova</a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/Maryna-Amrakhova/healthy-breakfasts-generator"
+          target="_blank"
+        >
+          Github</a
+        >
+        and is hosted on
+        <a href="https://healthy-breakfast.netlify.app/" target="_blank">
+          Netlify</a
+        >.
+      </footer>
+    </div>
+    <script src="src/main.js"></script>
+  </body>
+</html>

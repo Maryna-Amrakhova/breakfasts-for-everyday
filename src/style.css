@@ -1,0 +1,90 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(150, 195, 255), rgb(255, 255, 185)) fixed;  
+}
+.container {
+  max-width: 600px;
+  margin: 120px auto;  
+}
+a {
+  color: hsl(155, 65%, 30%);
+}
+header {
+  margin-bottom: 30px;
+}
+h1 {
+  font-family: Cochin, Georgia, serif;
+  font-size: 36ps;
+  line-height: 1.5;
+  color: #252525;
+}
+.form-container {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  padding: 30px;
+  text-align: left;
+}
+form {
+  display: flex;
+}
+.hint {
+  line-height: 1.5;
+  margin-top: 7px;
+  opacity: 0.6;
+  font-size: 12px;
+}
+.text-type {
+  padding: 10px;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  width: 80%;
+  font-size: 16px;
+  border-radius: 5px;
+  line-height: 20px;
+}
+.submit-type {
+  margin-left: 10px;
+  background: #008f53;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 24px;
+}
+.breakfast {
+  font-size: 16px;
+  background-color: #fff;
+  padding: 30px;
+  text-align: left;
+  line-height: 1.8;
+  border-left: 3px solid #008f53;
+  box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+}
+.breakfast strong {
+  color: #008f53;
+}
+.hidden {
+  display: none;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #424242;
+}
+.generating {
+  animation: blink 1s steps(1, end) infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
